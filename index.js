@@ -33,6 +33,6 @@ function appendDriver(name) {
 
 function prependDriver(name) {
   const copyOfDrivers = drivers.slice();
-  copyOfDrivers.pop(name);
+  copyOfDrivers.unshift(name);
   return copyOfDrivers;
 }
