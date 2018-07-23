@@ -24,3 +24,8 @@ function removeLastDriver() {
 function removeFirstDriver() {
   return drivers.slice(1);
 }
+
+function appendDriver(name) {
+  const copyOfDrivers = drivers.slice();
+  return copyOfDrivers.push(name)
+}
